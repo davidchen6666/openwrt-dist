@@ -51,20 +51,6 @@ jobs:
         make package/luci-app-passwall/{clean,compile} -j4
         # 生成 index 和签名
         make package/index
-    - name: Upload
-      env:
-        SDK_URL: ${{ matrix.SDK_URL }}
-        GITHUB_TOKEN: ${{ secrets.TOKEN }}
-      run: |
-        TAG=$(sed -n 's/.*targets\/\(\w*\)\/\(\w*\)\/.*/packages\/\1\/\2/p' <<< $SDK_URL)
-        # Upload base only
-        cd ~/sdk/bin/packages/
-        git init
-        git config --global user.name "David"
-        git config --global user.email "davidchen6666@noreply.github.com"
-        git add .
-        git commit -m "$TAG$(TZ='Asia/Shanghai' date +@%Y%m%d)"
-        git push --force --quiet "https://$GITHUB_TOKEN@github.com/davidchen6666/openwrt-dist.git" HEAD:$TAG
     - uses: actions/upload-artifact@v2
       with:
         name: ac2100-passwall
