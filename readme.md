@@ -1,9 +1,7 @@
-# OpenWRT dist
-[![](https://github.com/simonsmh/openwrt-dist/workflows/Openwrt%20Build%20Bot/badge.svg)](https://github.com/simonsmh/openwrt-dist/actions)
+# OpenWRT dist for PassWall
+[![](https://github.com/davidchen6666/openwrt-dist/workflows/Openwrt%20Build%20Bot/badge.svg)](https://github.com/davidchen6666/openwrt-dist/actions)
 
-Build with GitHub Action Workflow daily.
-
-This project is only for OpenWRT routers. Currently it's based on 2102.
+This project is only for OpenWRT routers installed for MI AC2100 (OpenWrt official releases). Currently it's based on version 2102.
 
 [You may want original project here.](http://openwrt-dist.sourceforge.net)
 
@@ -23,23 +21,17 @@ You can get target branch from distfeeds on your router.
 
 ```
 # cat /etc/opkg/distfeeds.conf
-src/gz openwrt_core https://downloads.openwrt.org/releases/21.02.0/targets/x86/64/packages
+src/gz openwrt_core https://downloads.openwrt.org/releases/21.02.0/targets/ramips/mt7621/packages
 ...
 ```
 
-Here means _x86/64_ is your's target, you got **packages/_x86/64_** as **branch name** now.
-
 #### Step 3
-Search your branch name in the branches list and add the following line to `/etc/opkg/customfeeds.conf`.
+
+##### Option 1
+Add the following line to `/etc/opkg/customfeeds.conf`.
 
 ```
-src/gz simonsmh http://cdn.jsdelivr.net/gh/simonsmh/openwrt-dist@{{$BRANCH_NAME}}
-```
-
-For example, if you want to use `x86_64` packages and you got the branch name as `packages/x86/64`, You could use this line after the previous step.
-
-```
-src/gz simonsmh http://cdn.jsdelivr.net/gh/simonsmh/openwrt-dist@packages/x86/64
+src/gz simonsmh http://cdn.jsdelivr.net/gh/simonsmh/openwrt-dist@packages/ramips/mt7621
 ```
 
 Then install whatever you want.
@@ -62,16 +54,12 @@ opkg install luci-app-vlmcsd
 
 For more detail please check the manifest.
 
+##### Option 2
 You can also search and install them in LuCI or upload these downloaded files to your router with SCP/SFTP, then login to your router and use opkg to install these ipk files.
 
-## Openwrt Image Builder
-
-Build configurable images with ImageBuilder after the SDK finished building packages. The images are stored in the device named branches, like *image/generic.x86_64*
-
-[Reference for installation](https://openwrt.org/docs/guide-user/installation/generic.sysupgrade)
 
 ## Build it yourself
-[Check here](https://github.com/simonsmh/openwrt-dist/blob/master/.github/workflows/main.yml)
+[Check here](https://github.com/davidchen6666/openwrt-dist/blob/master/.github/workflows/main.yml)
 
 You need to make a fork and chage items in the matrix yourself to match your needs. If you need to keep your packages safe, please use `usign` to regenerate private key and make the repo private.
 
