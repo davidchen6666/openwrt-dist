@@ -1,0 +1,431 @@
+Package: ChinaDNS
+Version: 1.3.3-1
+Depends: libc
+License: GPLv3
+Section: net
+Architecture: mipsel_24kc
+Installed-Size: 36226
+Filename: ChinaDNS_1.3.3-1_mipsel_24kc.ipk
+Size: 35849
+SHA256sum: a0dfdda49266bbf2ed03b7438d4cfd18ae446ea06ed70efd088ec5871c662d9b
+Description:  Protect yourself against DNS poisoning in China.
+
+Package: dns-forwarder
+Version: 1.2.1-2
+Depends: libc
+License: GPLv3
+Section: net
+Architecture: mipsel_24kc
+Installed-Size: 8867
+Filename: dns-forwarder_1.2.1-2_mipsel_24kc.ipk
+Size: 9663
+SHA256sum: 99d39379ed6aff78523d0e1d25600acac787d051c09f28e894c46519bce428de
+Description:  Forwarding DNS queries on TCP transport.
+
+Package: libmbedtls12
+Version: 2.16.11-1
+Depends: libc
+Provides: libmbedtls
+License: GPL-2.0-or-later
+Section: libs
+ABIVersion: 12
+CPE-ID: cpe:/a:arm:mbed_tls
+Architecture: mipsel_24kc
+Installed-Size: 179497
+Filename: libmbedtls12_2.16.11-1_mipsel_24kc.ipk
+Size: 179931
+SHA256sum: 382d630862c886f506909da4af14b1e8c57f6a0b661b99075a729f43ad12d334
+Description:  The aim of the mbedtls project is to provide a quality, open-source
+ cryptographic library written in C and targeted at embedded systems.
+ This package contains the mbedtls library.
+
+Package: libopenssl-afalg
+Version: 1.1.1l-1
+Depends: libc, libopenssl1.1, kmod-crypto-user, libopenssl-conf
+License: OpenSSL
+Section: libs
+CPE-ID: cpe:/a:openssl:openssl
+Architecture: mipsel_24kc
+Installed-Size: 5330
+Filename: libopenssl-afalg_1.1.1l-1_mipsel_24kc.ipk
+Size: 6285
+SHA256sum: e8be02355a7e22e7ed0cfb4c2236d94ecdb555665b60e17bd5bb87e8b16f844a
+Description:  This package adds an engine that enables hardware acceleration
+ through the AF_ALG kernel interface.
+ To use it, you need to configure the engine in /etc/ssl/openssl.cnf
+ See https://www.openssl.org/docs/man1.1.1/man5/config.html#Engine-Configuration-Module
+ and https://openwrt.org/docs/techref/hardware/cryptographic.hardware.accelerators
+ The engine_id is "afalg"
+
+Package: libopenssl-conf
+Version: 1.1.1l-1
+Depends: libc, libopenssl1.1
+License: OpenSSL
+Section: libs
+CPE-ID: cpe:/a:openssl:openssl
+Architecture: mipsel_24kc
+Installed-Size: 4776
+Filename: libopenssl-conf_1.1.1l-1_mipsel_24kc.ipk
+Size: 5765
+SHA256sum: 37be7e3ebb3c557533e5bcb9fa4459f476952c1b9238faa01e01563ad5c5a15b
+Description:  The OpenSSL Project is a collaborative effort to develop a robust,
+ commercial-grade, full-featured, and Open Source toolkit implementing the
+ Transport Layer Security (TLS) protocol as well as a full-strength
+ general-purpose cryptography library.
+ This package installs the OpenSSL configuration file /etc/ssl/openssl.cnf.
+
+Package: libopenssl-devcrypto
+Version: 1.1.1l-1
+Depends: libc, libopenssl1.1, kmod-cryptodev, libopenssl-conf
+License: OpenSSL
+Section: libs
+CPE-ID: cpe:/a:openssl:openssl
+Architecture: mipsel_24kc
+Installed-Size: 7793
+Filename: libopenssl-devcrypto_1.1.1l-1_mipsel_24kc.ipk
+Size: 8781
+SHA256sum: 0f05cd5a5ea223a6018b0cedd70c0e002277e59c97fb479be1099713a6834520
+Description:  This package adds an engine that enables hardware acceleration
+ through the /dev/crypto kernel interface.
+ To use it, you need to configure the engine in /etc/ssl/openssl.cnf
+ See https://www.openssl.org/docs/man1.1.1/man5/config.html#Engine-Configuration-Module
+ and https://openwrt.org/docs/techref/hardware/cryptographic.hardware.accelerators
+ The engine_id is "devcrypto"
+
+Package: libopenssl1.1
+Version: 1.1.1l-1
+Depends: libc
+Provides: libopenssl
+License: OpenSSL
+Section: libs
+ABIVersion: 1.1
+CPE-ID: cpe:/a:openssl:openssl
+Architecture: mipsel_24kc
+Installed-Size: 983927
+Filename: libopenssl1.1_1.1.1l-1_mipsel_24kc.ipk
+Size: 974464
+SHA256sum: f184254dc0b55f25206fb9cad17470aafe3b7c86f01e6950f3ec2957f4b81056
+Description:  The OpenSSL Project is a collaborative effort to develop a robust,
+ commercial-grade, full-featured, and Open Source toolkit implementing the
+ Transport Layer Security (TLS) protocol as well as a full-strength
+ general-purpose cryptography library.
+ This package contains the OpenSSL shared libraries, needed by other programs.
+
+Package: libpcre16
+Version: 8.44-3
+Depends: libc
+License: BSD-3-Clause
+Section: libs
+CPE-ID: cpe:/a:pcre:pcre
+Architecture: mipsel_24kc
+Installed-Size: 67464
+Filename: libpcre16_8.44-3_mipsel_24kc.ipk
+Size: 68318
+SHA256sum: 6dea89d1f93774fee382f869a27665559e29674e3bbbdd384e81d6a5819f0125
+Description:  A Perl Compatible Regular Expression library (16bit support)
+
+Package: libpcre32
+Version: 8.44-3
+Depends: libc
+License: BSD-3-Clause
+Section: libs
+CPE-ID: cpe:/a:pcre:pcre
+Architecture: mipsel_24kc
+Installed-Size: 63160
+Filename: libpcre32_8.44-3_mipsel_24kc.ipk
+Size: 64023
+SHA256sum: e78ab5019aba0b659408b770a2ac5510b5871536f3ae91093fb4f3e1fada4752
+Description:  A Perl Compatible Regular Expression library (32bit support)
+
+Package: libpcre
+Version: 8.44-3
+Depends: libc
+License: BSD-3-Clause
+Section: libs
+CPE-ID: cpe:/a:pcre:pcre
+Architecture: mipsel_24kc
+Installed-Size: 80388
+Filename: libpcre_8.44-3_mipsel_24kc.ipk
+Size: 81243
+SHA256sum: 0165f1af42abecad0506b91e2becce14eafa0c84467c7c67fb3e2d56532f1a49
+Description:  A Perl Compatible Regular Expression library
+
+Package: libpcrecpp
+Version: 8.44-3
+Depends: libc, libpcre, uclibcxx
+License: BSD-3-Clause
+Section: libs
+CPE-ID: cpe:/a:pcre:pcre
+Architecture: mipsel_24kc
+Installed-Size: 11512
+Filename: libpcrecpp_8.44-3_mipsel_24kc.ipk
+Size: 12269
+SHA256sum: e01ff11bd9607008259188ab7af04c9d3704f592e77f0db8e13fe168bdd09b58
+Description:  C++ wrapper for Perl Compatible Regular Expression library
+
+Package: luci-app-chinadns
+Version: 1.6.3-1
+Depends: libc, ChinaDNS
+License: GPLv3
+Section: luci
+Architecture: all
+Installed-Size: 1831
+Filename: luci-app-chinadns_1.6.3-1_all.ipk
+Size: 2745
+SHA256sum: f9dae5e31ba3414387a4c062654e78c6f85f03d0b8aaabe9f27038d2b3ead9b3
+Description:  LuCI Support for ChinaDNS.
+
+Package: luci-app-dns-forwarder
+Version: 1.6.3-1
+Depends: libc, dns-forwarder
+License: GPLv3
+Section: luci
+Architecture: all
+Installed-Size: 1522
+Filename: luci-app-dns-forwarder_1.6.3-1_all.ipk
+Size: 2432
+SHA256sum: 2d97a6745f8218dfdb433ccfbc85f6a896b7868a08fb7122f8f831c5d8a13862
+Description:  LuCI Support for Dns-Forwarder.
+
+Package: luci-app-openclash
+Version: 0.43.09-beta
+Depends: libc, iptables, dnsmasq-full, coreutils, coreutils-nohup, bash, curl, ca-certificates, ipset, ip-full, iptables-mod-tproxy, iptables-mod-extra, libcap, libcap-bin, ruby, ruby-yaml, kmod-tun
+Section: opt
+Architecture: all
+Installed-Size: 2222326
+Filename: luci-app-openclash_0.43.09-beta_all.ipk
+Size: 2205994
+SHA256sum: c7a2f3fe7b6383403dd1a8c55bf9adc6cae62f79eb00bbedf4ef7f55172130fc
+Description:  A LuCI support for clash
+
+Package: luci-app-redsocks2
+Version: 1.6.3-1
+Depends: libc, redsocks2
+License: GPLv3
+Section: luci
+Architecture: all
+Installed-Size: 1705
+Filename: luci-app-redsocks2_1.6.3-1_all.ipk
+Size: 2613
+SHA256sum: 35c9614053ff599d68946611dfe79edc602320db1555c39b4a00135e1b58d696
+Description:  LuCI Support for RedSocks2.
+
+Package: luci-app-shadowsocks-without-ipset
+Version: 2.0.3-1
+Depends: libc, iptables, wget, resolveip
+License: GPLv3
+Section: luci
+Architecture: all
+Installed-Size: 13609
+Filename: luci-app-shadowsocks-without-ipset_2.0.3-1_all.ipk
+Size: 14548
+SHA256sum: bd529f0617816a9b999d623ed1c6dbbfbc56404775e2265b278d83638e2ced5b
+Description:  LuCI Support for shadowsocks-libev.
+
+Package: luci-app-shadowsocks
+Version: 2.0.3-1
+Depends: libc, iptables, wget, resolveip, ipset
+License: GPLv3
+Section: luci
+Architecture: all
+Installed-Size: 13699
+Filename: luci-app-shadowsocks_2.0.3-1_all.ipk
+Size: 14628
+SHA256sum: 0cb6ef5800585540e4fead399abd4786c7214e7ee3be3a00e87d0b182f387861
+Description:  LuCI Support for shadowsocks-libev.
+
+Package: luci-app-shadowvpn
+Version: 1.6.3-1
+Depends: libc, ShadowVPN
+License: GPLv3
+Section: luci
+Architecture: all
+Installed-Size: 1990
+Filename: luci-app-shadowvpn_1.6.3-1_all.ipk
+Size: 2900
+SHA256sum: 2fc48c71ba5afe5c7bb7cea81069029f852c4119e0464787b0a2fd0933ff1894
+Description:  LuCI Support for ShadowVPN.
+
+Package: luci-app-smartdns
+Version: 1.2020.30
+Depends: libc, smartdns
+License: GPL-3.0-or-later
+Section: luci
+Architecture: all
+Installed-Size: 4878
+Filename: luci-app-smartdns_1.2020.30_all.ipk
+Size: 5695
+SHA256sum: 494fefc22721ba691a5ec58c689c5b44e0a6397d2f1b18d8a12074a0c9fe05eb
+Description:  Provides Luci for smartdns
+
+Package: luci-app-vlmcsd
+Version: 1.0.1-1
+Depends: libc, vlmcsd
+License: MIT
+Section: luci
+Architecture: all
+Installed-Size: 1629
+Filename: luci-app-vlmcsd_1.0.1-1_all.ipk
+Size: 2503
+SHA256sum: 52489f3666335a4ecbb7b4a73cddd686b801e8128797f4e84f7ce5a6c03196f1
+Description:  This package contains LuCI configuration pages for openwrt-vlmcsd.
+
+Package: luci-i18n-smartdns-zh-cn
+Version: git-20.095.16235-df1a79b
+Depends: libc, luci-app-smartdns
+License: GPL-3.0-or-later
+Section: luci
+Architecture: all
+Installed-Size: 3184
+Filename: luci-i18n-smartdns-zh-cn_git-20.095.16235-df1a79b_all.ipk
+Size: 3993
+SHA256sum: 78b4b0ec9b3d67fe45d225e1a818102eb94a3c2e24da6aee1939d615dbb995e6
+Description:  Translation for luci-app-smartdns - 
+
+Package: mbedtls-util
+Version: 2.16.11-1
+Depends: libc, libmbedtls12
+License: GPL-2.0-or-later
+Section: utils
+CPE-ID: cpe:/a:arm:mbed_tls
+Architecture: mipsel_24kc
+Installed-Size: 6816
+Filename: mbedtls-util_2.16.11-1_mipsel_24kc.ipk
+Size: 7730
+SHA256sum: 9f7b179458d2da7746544151730f1376230a6b7f219c5e971a84881a046cb890
+Description:  The aim of the mbedtls project is to provide a quality, open-source
+ cryptographic library written in C and targeted at embedded systems.
+ This package contains mbedtls helper programs for private key and
+ CSR generation (gen_key, cert_req)
+
+Package: openssl-util
+Version: 1.1.1l-1
+Depends: libc, libopenssl1.1, libopenssl-conf
+License: OpenSSL
+Section: utils
+CPE-ID: cpe:/a:openssl:openssl
+Architecture: mipsel_24kc
+Installed-Size: 239823
+Filename: openssl-util_1.1.1l-1_mipsel_24kc.ipk
+Size: 238953
+SHA256sum: ae69a8d0f7891fc92258387fa2e6de49e727ebd5f216377022dda8f590156233
+Description:  The OpenSSL Project is a collaborative effort to develop a robust,
+ commercial-grade, full-featured, and Open Source toolkit implementing the
+ Transport Layer Security (TLS) protocol as well as a full-strength
+ general-purpose cryptography library.
+ This package contains the OpenSSL command-line utility.
+
+Package: shadowsocks-libev-server
+Version: 3.3.5-1
+Depends: libc, libpthread, libev, libpcre, libcares, libsodium, libmbedtls12
+License: GPLv3
+Section: net
+Architecture: mipsel_24kc
+Installed-Size: 60007
+Filename: shadowsocks-libev-server_3.3.5-1_mipsel_24kc.ipk
+Size: 60674
+SHA256sum: fa72bc7c5a60abb8635ef8b8f930f5e22914b1da2551431f11424d0e3d329eeb
+Description:  Shadowsocks-libev is a lightweight secured socks5 proxy for embedded devices and low end boxes.
+
+Package: shadowsocks-libev
+Version: 3.3.5-1
+Depends: libc, libpthread, libev, libpcre, libcares, libsodium, libmbedtls12
+License: GPLv3
+Section: net
+Architecture: mipsel_24kc
+Installed-Size: 156432
+Filename: shadowsocks-libev_3.3.5-1_mipsel_24kc.ipk
+Size: 156233
+SHA256sum: 43bf575bfec70c94199aec52b5001c474eda7f81dfef79ca9ba656f647f6dc3b
+Description:  Shadowsocks-libev is a lightweight secured socks5 proxy for embedded devices and low end boxes.
+
+Package: simple-obfs-server
+Version: 0.0.5-5
+Depends: libc, libpthread, libev
+License: GPLv3
+Section: net
+Architecture: mipsel_24kc
+Installed-Size: 29448
+Filename: simple-obfs-server_0.0.5-5_mipsel_24kc.ipk
+Size: 30154
+SHA256sum: d7f68a729d5facd323e047b9a2ae6b2f9c0d0b149e5e2e23d94e712eb0940f79
+Description:  Simple-obfs is a simple obfusacting tool, designed as plugin server of shadowsocks.
+
+Package: simple-obfs
+Version: 0.0.5-5
+Depends: libc, libpthread, libev
+License: GPLv3
+Section: net
+Architecture: mipsel_24kc
+Installed-Size: 27759
+Filename: simple-obfs_0.0.5-5_mipsel_24kc.ipk
+Size: 28492
+SHA256sum: c3969fc4e13daaf38ff7bbf77e039819d44bcf3a5f3a4664c048b255f7bcdd2b
+Description:  Simple-obfs is a simple obfusacting tool, designed as plugin server of shadowsocks.
+
+Package: smartdns
+Version: 1.2020.30-1
+Depends: libc, libpthread, libopenssl1.1
+License: GPL-3.0-or-later
+Section: net
+Architecture: mipsel_24kc
+Installed-Size: 63052
+Filename: smartdns_1.2020.30-1_mipsel_24kc.ipk
+Size: 63786
+SHA256sum: 8bfcaed7e7191247cfd1d8a3fb54b38a8ad364a9e4037a11ec894ddfad017957
+Description:  SmartDNS is a local DNS server which accepts DNS query requests from local network clients,
+ gets DNS query results from multiple upstream DNS servers concurrently, and returns the fastest IP to clients.
+ Unlike dnsmasq's all-servers, smartdns returns the fastest IP. 
+
+Package: uclibcxx
+Version: 0.2.5-3
+Depends: libc
+License: LGPL-2.1-or-later
+Section: libs
+Architecture: mipsel_24kc
+Installed-Size: 66383
+Filename: uclibcxx_0.2.5-3_mipsel_24kc.ipk
+Size: 66944
+SHA256sum: 8866af7fe4cd5ce547dc081e78417e11a86a010288f03aec70b890a7a5d671dc
+Description:  C++ library for embedded systems
+
+Package: vlmcsd
+Version: svn1112-1
+Depends: libc, libpthread
+License: MIT
+Section: net
+Architecture: mipsel_24kc
+Installed-Size: 49276
+Filename: vlmcsd_svn1112-1_mipsel_24kc.ipk
+Size: 49868
+SHA256sum: 1cc88dc50a0b0f5a3995dbf5de3dc3e1ffec08373b508887f1d27d886869edc4
+Description:  vlmcsd is a KMS Emulator in C.
+
+Package: zlib-dev
+Version: 1.2.11-3
+Depends: libc, zlib
+License: Zlib
+Section: devel
+CPE-ID: cpe:/a:gnu:zlib
+Architecture: mipsel_24kc
+Installed-Size: 77301
+Filename: zlib-dev_1.2.11-3_mipsel_24kc.ipk
+Size: 78104
+SHA256sum: 614193c4d6235fc88ad22ab9f5c29b2aad96ef404308b3e87f12276b09e4c7e8
+Description:  zlib is a lossless data-compression library.
+ This package includes the development support files.
+
+Package: zlib
+Version: 1.2.11-3
+Depends: libc
+License: Zlib
+Section: libs
+CPE-ID: cpe:/a:gnu:zlib
+Architecture: mipsel_24kc
+Installed-Size: 37743
+Filename: zlib_1.2.11-3_mipsel_24kc.ipk
+Size: 38552
+SHA256sum: e700fbbd0d2df64844799830884adbaa911ae11be96c092e4b7ef3561acdfa3f
+Description:  zlib is a lossless data-compression library.
+ This package includes the shared library.
+
