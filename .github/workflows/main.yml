@@ -41,16 +41,16 @@ jobs:
         pushd feeds/packages/lang
         rm -rf golang && svn co https://github.com/openwrt/packages/branches/openwrt-21.02/lang/golang
         popd
-        ./scripts/feeds install luci-app-passwall
+        ./scripts/feeds install v2ray-core v2ray-plugin trojan trojan-plus trojan-go luci-app-passwall
     - name: Compile
       run: |
         cd ~/sdk
         make defconfig
         # Edit config
-        # make V=s
-        make package/luci-app-passwall/{clean,compile} -j4
+        make
+        # make package/luci-app-passwall/{clean,compile} -j4
         # 生成 index 和签名
-        make package/index
+        # make package/index
     - uses: actions/upload-artifact@v2
       with:
         name: ac2100-passwall
